@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = +prompt("indique o 1º numero:")
+        let num2 = +prompt("indique o 2º numero:")
+        let op = prompt("indique o operador(+ - * /):")
+        let sum = 0
+        if (op == "/" || op == "*" || op == "-" || op == "+") {
+            
+        
+        if (op == "/" && num2 == 0) {
+            console.log("operação invalida")
+        }
+        if (op == "+") {
+            sum = num1 + num2 
+            console.log(num1+" + "+num2+" = "+sum)
+        }
+        if (op == "-") {
+            sum = num1 - num2 
+            console.log(num1+" - "+num2+" = "+sum)
+        }
+        if (op == "*") {
+            sum = num1 * num2 
+            console.log(num1+" * "+num2+" = "+sum)
+        }
+        if (op == "/") {
+            sum = num1 / num2 
+            console.log(num1+" / "+num2+" = "+sum)
+        }
+    }
+    else{
+        console.log("operador invalido")
+    }
+    </script>
+</body>
+</html>

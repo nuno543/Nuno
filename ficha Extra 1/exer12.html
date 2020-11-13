@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = Math.floor(Math.random() * 100) + 1
+        let tent = prompt("Adivinhe o numero escolhido entre 1e 100:")
+for (let i = 4; i >=1; i--) {
+if (num < tent) {
+  tent = prompt("Baixo |"+i+" tentativas restantes")
+}
+if (num > tent) {
+  tent = prompt("Cima |"+i+" tentativas restantes")
+}
+}
+if (num==tent) {
+ console.log("Parabens, descubriste o numero.")
+}
+else{
+console.log("Tenta Outravez")}
+    </script>
+</body>
+</html>

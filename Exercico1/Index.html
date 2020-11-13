@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha01</title>
+</head>
+<body>
+    <script>
+        //Exercicio1
+        console.log("Ola JavaScript!");
+        //Exercicio2-a
+        let admin, name
+        name = "John"
+        admin = name
+        console.log(admin);
+        //Exercicio2-b
+        let planetName = "Terra", currenterVisitorNames
+        //Exercicio3
+        const birthday="'18-04-1982"
+        //Exercicio4
+        name ="Ilya"
+        console.log(`Hello ${1} ` )
+        console.log(`Hello ${"name"} ` )
+        console.log(`Hello ${name} ` )
+        //Exercicio5
+        console.log("" + 1 + 0)
+        console.log("" - 1 + 0)
+        console.log(true + false)
+        console.log(6 / "3")
+        console.log("2" * "3")
+        console.log(4 + 5 + "px")
+        console.log("$" + 4 + 5)
+        console.log("4" - 2)
+        console.log("4px" - 2)
+        console.log(7 / 0)
+        console.log(" -9 " + 5)
+        console.log(" -9 " - 5)
+        console.log(null + 1)
+        console.log(undefined + 1)
+        //exercicio6
+        let a=1 ,b=1
+        let c = ++a
+        let d = b++
+        console.log(c)
+        console.log(d)
+        //exercico7
+        let nome=prompt("Qual é o seu nome?")
+        console.log(`*${nome}*`)
+        //exercicio8
+        console.log()
+        5 > 4
+        console.log("apple" > "pineapple")
+        console.log("2" > "12")
+        console.log(undefined == null)
+        console.log(undefined === null)
+        console.log(null == "\n0\n")
+        console.log(null === +"\n0\n")
+        //exercicio9
+        if("0"){
+            alert("Hello")
+        }
+        //exercicio9-b
+        let answer = prompt('Qual é o nome"Oficial" do JavaScript?')
+        if (answer=="ECMAScript")
+        {
+            console.log('Right')
+        }
+        else
+        {
+            console.log('You don’t know? “ECMAScript”!')
+        }
+        //exercicio9-c
+        let asknNumber =  prompt('Introduza um numero:')
+        if (asknNumber>0)
+        {
+            console.log('1')
+        }
+        else if(asknNumber<0)
+        {
+            console.log('-1')
+        }
+        else
+        {
+            console.log('0')
+        }
+        //exercicio9-d
+        a = 2
+        b = 1
+        let result = a+b<4 ? true : False 
+        console.log(result)
+        //exercicio9-e
+        let login = prompt("Que cargo voce tem?")
+        let message
+        let access
+        acces = login == 'Employee' ? message="hello": acces = login == 'Director' ? message="Greetings": acces = login == "" ? message="": message="Coloque o seu cargo";
+        console.log(message)
+        //exercicio10-a
+        alert( null || 2 || undefined );
+        alert( alert(1) || 2 || alert(3) );
+        alert( 1 && null && 2 );
+        alert( alert(1) && alert(2) );
+        alert( null || 2 && 3 || 4 );
+        //exercicio10-b
+        let age = prompt('Introduza é a sua idade:') 
+        if(age>= 14 && age <= 90 ){
+        console.log("Voce tem entre os 14 e os 90 anos")
+        }
+        //exercicio10-c.1
+        if (!(age<= 14 && age >= 90) ){
+        console.log("Voce não tem entre os 14 e os 90 anos")
+        }
+        //exercicio10-c.2
+        if (age<= 14 && age >= 90 ){
+        console.log("Voce não tem entre os 14 e os 90 anos")
+        }
+        //exercicio10-d
+        if (-1 || 0) alert( 'first' );
+        if (-1 && 0) alert( 'second' );
+        if (null || -1 && 1) alert( 'third' );
+        //exercicio10-e
+        login = prompt("Qual é o seu cargo?")
+        if (login == "admin")
+        {
+            let senha = prompt("Indique a senha")
+            if(senha== "TheMaster")
+            {
+                console.log('welcome')
+            }
+            else if (senha == null)
+        {
+         console.log("cancelado")   
+        }
+        else
+        {
+            console.log("Senha incorreta") 
+        }
+
+        }
+        else if (login == null)
+        {
+         console.log("cancelado")   
+        }
+        else
+        {
+            console.log("Não te conheço") 
+        }
+        //Exercico-11a
+        let i = 3;
+    while (i) {
+    alert( i-- );
+    }
+    //Exercico-11b
+    let i = 0;
+    while (++i < 5) alert( i );
+
+    let i = 0;
+    while (i++ < 5) alert( i );
+    //Exercico-11c
+    for (let i = 0; i < 5; i++) alert( i );
+
+    for (let i = 0; i < 5; ++i) alert( i );
+    //Exercico-11d
+    for (i = 2;i<= 10; i+2 );
+    
+        </script>
+</body>
+</html>
